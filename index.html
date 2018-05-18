@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BFAP Header Demo</title>
+    <script type="text/javascript" src="assets/particles.js/particles.js"></script>
+    <style>
+      body, html, .header {
+        margin: 0;
+        padding: 0;
+      }
+      .header {
+        width: 100vw;
+        height: 100vh;
+      }
+      #overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header" id="particles-js" style="background-image: url('assets/images/BFAP_BottomLayer.jpg')"></div>
+    <div class="header" id="overlay" style="background-image: url('assets/images/BFAP_TopLayer.png')"></div>
+  </body>
+  <script type="text/javascript">
+    particlesJS.load('particles-js', 'assets/particles.js/demo/particles.json', function() {
+      console.log('callback - particles.js config loaded');
+    });
+  </script>
+</html>
